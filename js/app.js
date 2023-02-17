@@ -39,6 +39,6 @@ $(document).ready(function () {
       nextArrow: $(".nextArrow"),
       arrows: true,
     });
-    /*   window.scrollTo(0, 0); */
+    window.scrollTo(0, 0);
   }, 200);
 });

@@ -14,6 +14,15 @@ $(document).ready(function () {
         });
         // 태블릿 모바일 터치이벤트
       } else if (window.innerWidth <= 1024) {
+        $(window).scroll(function () {
+          const currentScrollValue = document.documentElement.scrollTop;
+
+          if (currentScrollValue > 2400) {
+            $(".scroll_down").css("opacity", 0);
+          } else {
+            $(".scroll_down").css("opacity", 1);
+          }
+        });
         $("body").on("touchstart", function (e) {
           const currentTouchValue = e.originalEvent.touches[0].pageY;
           console.log(currentTouchValue);

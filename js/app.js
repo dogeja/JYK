@@ -25,7 +25,6 @@ $(document).ready(function () {
         });
         $("body").on("touchstart", function (e) {
           const currentTouchValue = e.originalEvent.touches[0].pageY;
-          console.log(currentTouchValue);
           if (currentTouchValue > 1200) {
             $(".scroll_down").css("opacity", 0);
           } else if (currentTouchValue <= 1200) {

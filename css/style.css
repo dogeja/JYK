@@ -188,7 +188,7 @@ a {
   }
   /******************************** MV  *******************************/
   .main_visual_1 {
-    background: rgb(246, 246, 243);
+    background: #f6f6f3;
     background: linear-gradient(
       180deg,
       rgba(246, 246, 243, 1) 0%,
@@ -213,7 +213,7 @@ a {
     box-shadow: 2px 2px 3px 0px #0b0b0c;
     display: flex;
     width: 68.75%;
-    background: transparent;
+    background: #f6f6f3;
     margin: 0 auto;
     left: 0;
     right: 0;

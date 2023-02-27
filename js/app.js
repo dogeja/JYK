@@ -55,17 +55,16 @@ $(document).ready(function () {
     $(".scroll_down").css("opacity", 1);
   });
   // slick , 새로고침시 0
+  $(".web").slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 500,
+    prevArrow: $(".prevArrow"),
+    nextArrow: $(".nextArrow"),
+    arrows: true,
+  });
   setTimeout(function () {
-    $(".web").slick({
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      speed: 500,
-      prevArrow: $(".prevArrow"),
-      nextArrow: $(".nextArrow"),
-      arrows: true,
-    });
-
     window.scrollTo(0, 0);
   }, 200);
 });

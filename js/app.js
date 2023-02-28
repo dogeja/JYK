@@ -45,7 +45,7 @@ $(document).ready(function () {
     .resize();
   // 리사이즈시 재실행
   $(".intro").show();
-  setTimeout(introAnimation, 1200);
+  setTimeout(introAnimation, 1000);
   function introAnimation() {
     $(".intro").fadeOut();
   }
@@ -67,5 +67,5 @@ $(document).ready(function () {
 
   setTimeout(function () {
     window.scrollTo(0, 0);
-  }, 200);
+  }, 100);
 });

@@ -1,4 +1,13 @@
 $(document).ready(function () {
+  $(".web").slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 500,
+    prevArrow: $(".prevArrow"),
+    nextArrow: $(".nextArrow"),
+    arrows: true,
+  });
   $(window)
     .resize(function () {
       // 데스크탑 스크롤이벤트
@@ -54,16 +63,8 @@ $(document).ready(function () {
     window.scrollTo(0, 0);
     $(".scroll_down").css("opacity", 1);
   });
-  // slick , 새로고침시 0
-  $(".web").slick({
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    speed: 500,
-    prevArrow: $(".prevArrow"),
-    nextArrow: $(".nextArrow"),
-    arrows: true,
-  });
+  // 새로고침시 0
+
   setTimeout(function () {
     window.scrollTo(0, 0);
   }, 200);

@@ -7,7 +7,10 @@ $(document).ready(function () {
     prevArrow: $(".prevArrow"),
     nextArrow: $(".nextArrow"),
     arrows: true,
+    lazyLoad: "ondemand",
   });
+  //slick 새로고침
+  $(".web").slick("init");
   $(window)
     .resize(function () {
       // 데스크탑 스크롤이벤트

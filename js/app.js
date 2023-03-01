@@ -7,7 +7,6 @@ $(document).ready(function () {
     prevArrow: $(".prevArrow"),
     nextArrow: $(".nextArrow"),
     arrows: true,
-    lazyLoad: "ondemand",
   });
   //slick 새로고침
   $(".web").slick("init");

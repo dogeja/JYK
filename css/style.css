@@ -247,7 +247,8 @@ a {
   }
   .cineq,
   .nomad_todo_list,
-  .crypto_tracker {
+  .crypto_tracker,
+  .coffeenie {
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -723,6 +724,7 @@ a {
     position: relative;
     display: flex;
   }
+  /* mobilebg */
   .cineq > a > img {
     content: url(../img/cineq/cineq_mobile.jpg);
   }
@@ -731,6 +733,9 @@ a {
   }
   .crypto_tracker > a > img {
     content: url(../img/crypto/crypto_m.jpg);
+  }
+  .coffeenie > a > img {
+    content: url(../img/coffeenie/coffeenie_mobile.jpg);
   }
   .article > div:nth-of-type(2) {
     width: 91.66%;
